@@ -1,0 +1,129 @@
+.Category-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  max-height: 700px;
+  height: 100%;
+}
+
+.Category-left {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(165, 168, 170);
+  width: 160px;
+  height: 418px;
+  border-radius: 12px;
+  margin-right: 4px;
+}
+
+.Category-left-title {
+  margin-left: 8px;
+  border-bottom: 2px solid #fff;
+}
+
+.Category-left-product {
+  margin-left: 4px;
+  margin: 8px;
+}
+.Category-left-product:hover {
+  cursor: pointer;
+  background-color: rgb(149, 146, 146);
+  border-radius: 4px;
+}
+
+.Category-right {
+  max-width: 86%;
+  width: 1200px;
+  background-color: rgb(165, 168, 170);
+  border-radius: 12px;
+}
+.category-right-title {
+  margin-left: 20px;
+}
+
+.Category-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 2%;
+  min-height: 370px;
+}
+
+.category-product-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.category-product-name {
+  height: 2.6em;
+  line-height: 1.3em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.category-product-price {
+  font-size: 16px;
+  color: black;
+  height: 24px;
+  margin-top: 4px;
+  text-align: center;
+}
+.category-product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  min-height: 280px;
+  height: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.category-left-button,
+.category-right-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 10rem;
+  border-radius: 50%;
+  margin-bottom: 60px;
+  align-self: center;
+  cursor: pointer;
+}
+.category-left-icon {
+  font-size: 20px;
+  margin-top: 2px;
+}
+.category-right-icon {
+  font-size: 20px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+  .Category-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Category-left {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .Category-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
