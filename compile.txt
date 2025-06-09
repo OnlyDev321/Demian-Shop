@@ -1,0 +1,12 @@
+phai run image elasticsearch trong docker 
+
+Fonted
+curl -X DELETE http://localhost:9200/products
+elasticdump \
+	--input=products_data.json \
+	--output=http://localhost:9200/products\
+	--type=data
+npm start
+
+Back-end
+uvicorn main:app --reload --port 8001

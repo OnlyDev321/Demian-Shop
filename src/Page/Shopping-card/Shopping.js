@@ -36,6 +36,7 @@ function Shopping() {
                 </button>
                 <a
                   href={product.url}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="Product-button Product-button-link"
                 >
