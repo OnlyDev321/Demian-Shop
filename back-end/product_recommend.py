@@ -98,7 +98,7 @@ def recommend(
     for title in clicked_names:
         try:
             product = fetch_product_by_name(title)
-            clicked_descriptions.append(product.get("description", ""))
+            clicked_descriptions.append(product.get("text_description", ""))
         except:
             continue
 
